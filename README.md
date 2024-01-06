@@ -10,7 +10,7 @@ Index.go is the starting point of the app, all response and request follow JSON 
 Handler - signupHandler.go <br>
 Request type - POST <br>
 Requires Authorization - NO<br>
-JSON Format - {"name":"Abhinav", "rollno":"190031","password":"mypassword",
+JSON Format - {"name":"Akshay", "rollno":"190092","password":"mypassword",
 "account_type":"member"}
 
 #### Account type decides the type of user - It can be "member" , "CTM"(For core team ) or "admin"(For gen sec )
@@ -22,7 +22,7 @@ note - enter account_type value correctly(without typo or whitespaces)
 Handler - loginHandler.go<br>
 Request type - POST <br>
 Requires Authorization - NO<br>
-JSON Format - {"rollno":"190031","password":"mypassword"}
+JSON Format - {"rollno":"190092","password":"mypassword"}
 
 ## /secretpage
 
@@ -35,7 +35,7 @@ Request type - GET <br>
 Handler - addCoinsHandler.go<br>
 Request type - POST <br>
 Requires Authorization - YES<br>
-JSON Format - {"rollno":"190031","coins":"200","remarks":"Why the coins are bein rewarded "}
+JSON Format - {"rollno":"190092","coins":"200","remarks":"Why the coins are bein rewarded "}
 
 ### Only CTM and admin can use this endpoint to add coins to other members and CTM(only admins can add to CTM )
 
@@ -44,7 +44,7 @@ JSON Format - {"rollno":"190031","coins":"200","remarks":"Why the coins are bein
 Handler - transferCoinHandler.go<br>
 Request type - POST <br>
 Requires Authorization - YES<br>
-JSON Format- {"rollno":"190031","amount":10}
+JSON Format- {"rollno":"190092","amount":10}
 
 ### Transfers coins from account of logged in user to user(rollno) and deducts appropiate tax . Amount need to be of double type.
 
